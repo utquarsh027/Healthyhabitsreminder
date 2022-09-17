@@ -19,9 +19,12 @@ if __name__=='__main__':
     init_water=time()
     init_eyes=time()
     init_exercise=time()
-    watersecs=2
-    eyesecs=5
-    exercisesec=10
+    watersecs=int(input("After how many minutes you want us to remind you to drink water: "))
+    eyesecs=int(input("After how many minutes you want us to remind you to take a break from your screen: "))
+    exercisesec=int(input("After how many minutes you want us to remind you to get up from your chair: "))
+    watersecs=watersecs*60
+    eyesecs=eyesecs*60
+    exercisesec=exercisesec*60
     while True:
         
         if time()-init_water>watersecs:
